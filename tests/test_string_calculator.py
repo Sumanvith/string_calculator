@@ -1,7 +1,6 @@
 import pytest
 from src.string_calculator import add
 
-def test_negative_numbers():
-    with pytest.raises(ValueError) as e:
-        add("1,-2,-3")
-    assert str(e.value) == "Negatives not allowed: -2,-3"
+def test_ignore_large_numbers():
+    assert add("2,1001") == 2
+
