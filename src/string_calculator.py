@@ -1,1 +1,2 @@
-print(1)
+def add(numbers):
+    return 0
